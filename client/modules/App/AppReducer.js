@@ -4,7 +4,7 @@ import { TOGGLE_ADD_POST, TOGGLE_EDIT_POST } from './AppActions';
 // Initial State
 const initialState = {
   showAddPost: false,
-  showEditPost: false
+  showEditPost: false,
 };
 
 const AppReducer = (state = initialState, action) => {
@@ -17,7 +17,7 @@ const AppReducer = (state = initialState, action) => {
       return {
         ...state,
         showEditPost: !state.showEditPost,
-    };
+      };
 
     default:
       return state;
